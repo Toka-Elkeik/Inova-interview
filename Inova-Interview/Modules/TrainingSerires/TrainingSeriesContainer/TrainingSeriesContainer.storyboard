@@ -20,12 +20,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9S-kF-XYt">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1441"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1449.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="ui0-BV-Iyc">
                                                 <rect key="frame" x="0.0" y="20" width="414" height="349.5"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="lt6-vm-rNs">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="lt6-vm-rNs">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="185"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -77,7 +77,7 @@
                                                 </constraints>
                                             </stackView>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3DK-xo-sYh">
-                                                <rect key="frame" x="89" y="389.5" width="236" height="46"/>
+                                                <rect key="frame" x="40" y="389.5" width="334" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="0Ht-lc-77F"/>
                                                 </constraints>
@@ -91,7 +91,7 @@
                                                 </connections>
                                             </segmentedControl>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fge-oy-ul9">
-                                                <rect key="frame" x="0.0" y="441" width="414" height="1000"/>
+                                                <rect key="frame" x="0.0" y="449.5" width="414" height="1000"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1000" id="B38-Sy-9Ig"/>
                                                 </constraints>
@@ -104,9 +104,11 @@
                                         <constraints>
                                             <constraint firstItem="ui0-BV-Iyc" firstAttribute="leading" secondItem="w9S-kF-XYt" secondAttribute="leading" id="0HM-zx-CVW"/>
                                             <constraint firstAttribute="bottom" secondItem="Fge-oy-ul9" secondAttribute="bottom" id="189-IN-MhO"/>
+                                            <constraint firstAttribute="trailing" secondItem="3DK-xo-sYh" secondAttribute="trailing" constant="40" id="9n1-1X-UHW"/>
                                             <constraint firstItem="3DK-xo-sYh" firstAttribute="centerX" secondItem="w9S-kF-XYt" secondAttribute="centerX" id="AuX-2Y-JA1"/>
+                                            <constraint firstItem="3DK-xo-sYh" firstAttribute="leading" secondItem="w9S-kF-XYt" secondAttribute="leading" constant="40" id="HfZ-4d-8ZW"/>
                                             <constraint firstAttribute="trailing" secondItem="Fge-oy-ul9" secondAttribute="trailing" id="JJJ-zO-bTJ"/>
-                                            <constraint firstItem="Fge-oy-ul9" firstAttribute="top" secondItem="3DK-xo-sYh" secondAttribute="bottom" constant="6.5" id="Sxp-5g-zfc"/>
+                                            <constraint firstItem="Fge-oy-ul9" firstAttribute="top" secondItem="3DK-xo-sYh" secondAttribute="bottom" constant="15" id="Sxp-5g-zfc"/>
                                             <constraint firstAttribute="trailing" secondItem="ui0-BV-Iyc" secondAttribute="trailing" id="U2G-Sd-B32"/>
                                             <constraint firstItem="3DK-xo-sYh" firstAttribute="top" secondItem="ui0-BV-Iyc" secondAttribute="bottom" constant="20" id="i6j-v4-dPQ"/>
                                             <constraint firstItem="Fge-oy-ul9" firstAttribute="leading" secondItem="w9S-kF-XYt" secondAttribute="leading" id="nF1-if-7VX"/>
@@ -161,7 +163,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="main" width="240" height="240"/>
+        <image name="download" width="275" height="183"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
