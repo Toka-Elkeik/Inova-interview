@@ -9,6 +9,7 @@ import UIKit
 
 class OverviewView: BaseViewController, Storyboarded {
 
+    @IBOutlet weak var overViewTable: UITableView!
     
     // MARK: - LifeCycle Methods
     override func viewDidLoad() {
