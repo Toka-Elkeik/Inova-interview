@@ -15,18 +15,33 @@
                     <view key="view" contentMode="scaleToFill" id="wPP-sN-Vl1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7dG-Zp-nwx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ixd-NF-v5p"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7dG-Zp-nwx" firstAttribute="trailing" secondItem="ixd-NF-v5p" secondAttribute="trailing" id="7fC-f4-5l4"/>
+                            <constraint firstItem="7dG-Zp-nwx" firstAttribute="leading" secondItem="ixd-NF-v5p" secondAttribute="leading" id="Otp-z7-mXm"/>
+                            <constraint firstAttribute="bottom" secondItem="7dG-Zp-nwx" secondAttribute="bottom" id="VwL-o6-Ck2"/>
+                            <constraint firstItem="7dG-Zp-nwx" firstAttribute="top" secondItem="ixd-NF-v5p" secondAttribute="top" id="lJ2-xJ-anZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="classsesTable" destination="7dG-Zp-nwx" id="bvX-wr-2YS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcb-JR-EAn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="228" y="137"/>
+            <point key="canvasLocation" x="227.536231884058" y="136.60714285714286"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

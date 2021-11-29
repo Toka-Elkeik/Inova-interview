@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DescriptionCell" rowHeight="249" id="KGk-i7-Jjw" customClass="DescriptionCell" customModule="Inova_Interview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="249"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="249"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGR-Xq-pgw">
+                        <rect key="frame" x="16" y="24" width="418" height="122"/>
+                        <string key="text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was </string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TP2-9a-r9o">
+                        <rect key="frame" x="16" y="171" width="74" height="30"/>
+                        <state key="normal" title="Read More"/>
+                        <connections>
+                            <action selector="didClickButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="utw-Wx-L2e"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oGR-Xq-pgw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="Dvd-lQ-PDj"/>
+                    <constraint firstAttribute="trailing" secondItem="oGR-Xq-pgw" secondAttribute="trailing" constant="16" id="J1r-K9-onP"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TP2-9a-r9o" secondAttribute="bottom" constant="11" id="RMx-jv-Rqj"/>
+                    <constraint firstItem="TP2-9a-r9o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="jl0-9Y-1eb"/>
+                    <constraint firstItem="oGR-Xq-pgw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="kX4-Zi-D8T"/>
+                    <constraint firstItem="TP2-9a-r9o" firstAttribute="top" secondItem="oGR-Xq-pgw" secondAttribute="bottom" constant="25" id="nm7-60-VM3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="oGR-Xq-pgw" id="x9X-52-yoc"/>
+                <outlet property="readMoreButton" destination="TP2-9a-r9o" id="aV5-Hf-7AY"/>
+            </connections>
+            <point key="canvasLocation" x="67" y="24"/>
+        </tableViewCell>
+    </objects>
+</document>

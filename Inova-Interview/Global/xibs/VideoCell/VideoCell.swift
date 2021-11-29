@@ -8,16 +8,33 @@
 import UIKit
 
 class VideoCell: UITableViewCell {
-
+    // MARK: - Properties
+    static let cellId = String(describing: VideoCell.self)
+    
+    // MARK: - IBOutlets
+    @IBOutlet private weak var videoNumber: UILabel!
+    @IBOutlet private weak var videoImage: UIImageView!
+    @IBOutlet private weak var cellTitle: UILabel!
+    @IBOutlet private weak var cellDescription: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
+    // MARK: - Cell setters
+    func setVideoNumber(number: String) {
+        videoNumber.text = number
+    }
+    
+    func setImage(image: UIImage) {
+        videoImage.image = image
+    }
+    
+    func setCellTitle(title: String) {
+        cellTitle.text = title
+    }
+    
+    func setCellDesription(description: String) {
+        cellDescription.text = description
+    }
 }
